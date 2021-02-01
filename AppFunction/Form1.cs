@@ -25,7 +25,19 @@ namespace AppFunction
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Console.WriteLine(sender);
+            string selected = (string) comboBox1.SelectedItem;
+            switch(selected)
+            {
+                case "Spline":
+                    this.chart1.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+                    break;
+                case "Line":
+                    this.chart1.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+                    break;
+                default:
+                    this.chart1.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+                    break;
+            }
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
