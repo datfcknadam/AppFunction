@@ -26,6 +26,7 @@ namespace AppFunction
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selected = (string) comboBox1.SelectedItem;
+
             switch(selected)
             {
                 case "Spline":
@@ -33,6 +34,9 @@ namespace AppFunction
                     break;
                 case "Line":
                     this.chart1.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+                    break;
+                case "Point":
+                    this.chart1.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
                     break;
                 default:
                     this.chart1.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;

@@ -126,7 +126,8 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Line",
-            "Spline"});
+            "Spline",
+            "Point",});
             this.comboBox1.Location = new System.Drawing.Point(63, 3);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
