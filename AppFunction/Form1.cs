@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -121,6 +122,43 @@ namespace AppFunction
         private double getFunction(double x)
         {
             return Math.Sqrt(Math.Pow(x, 3));
+        }
+
+        private void clickSaveAs(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+            saveFileDialog1.Filter = "scv files (*.scv)|*.scv";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.RestoreDirectory = true;
+            int row = dataGridView5.Rows.Count;
+            int cell = dataGridView5.Rows[1].Cells.Count;
+            Console.WriteLine(row);
+            Console.WriteLine(cell);
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string filename = saveFileDialog1.FileName;
+                using (StreamWriter sw = new StreamWriter(filename, false, System.Text.Encoding.Unicode))
+                {
+
+                    for (int i = 0; i < row; i++)
+                    {
+                        string str = "";
+                        for (int j = 0; j < cell; j++)
+                        {
+                            if (dataGridView5.Rows[i].Cells[j].Value != null)
+                            {
+                                str += dataGridView5.Rows[i].Cells[j].Value.ToString() + ";";
+                            }
+                            
+                        }
+                        sw.WriteLine(str);
+                    }
+                    sw.Close();
+                    sw.Dispose();
+                }
+            }
+
         }
     }
 }

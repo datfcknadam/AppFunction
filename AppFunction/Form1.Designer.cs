@@ -112,30 +112,30 @@
             // openFileToolStripMenuItem1
             // 
             this.openFileToolStripMenuItem1.Name = "openFileToolStripMenuItem1";
-            this.openFileToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
+            this.openFileToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.openFileToolStripMenuItem1.Text = "Open File";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.clickSaveAs);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Line",
-            "Spline",
-            "Point"});
+            "Point",
+            "Spline"});
             this.comboBox1.Location = new System.Drawing.Point(63, 3);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedItem = null;
-            this.comboBox1.SelectedText = "Line";
             this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.Sorted = true;
             this.comboBox1.TabIndex = 4;
+            this.comboBox1.Text = "Line";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // textBox1
