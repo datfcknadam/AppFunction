@@ -119,5 +119,11 @@ namespace AppFunction
         {
             return Math.Sqrt(Math.Pow(x, 3));
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Column2.DataGridView.Rows.Clear();
+            this.chart1.Series[0].Points.Clear();
+        }
     }
 }
