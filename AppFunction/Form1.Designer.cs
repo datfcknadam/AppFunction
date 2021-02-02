@@ -58,10 +58,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(16, 433);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(21, 533);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(57, 48);
+            this.button1.Size = new System.Drawing.Size(76, 59);
             this.button1.TabIndex = 0;
             this.button1.Text = "Calk";
             this.button1.UseVisualStyleBackColor = true;
@@ -69,20 +69,21 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(98, 433);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(131, 533);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 48);
+            this.button2.Size = new System.Drawing.Size(75, 59);
             this.button2.TabIndex = 1;
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(182, 433);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(243, 533);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 48);
+            this.button3.Size = new System.Drawing.Size(75, 59);
             this.button3.TabIndex = 2;
             this.button3.Text = "Diagr";
             this.button3.UseVisualStyleBackColor = true;
@@ -94,8 +95,8 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(727, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(969, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -106,62 +107,65 @@
             this.openFileToolStripMenuItem1,
             this.saveAsToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openFileToolStripMenuItem1
             // 
             this.openFileToolStripMenuItem1.Name = "openFileToolStripMenuItem1";
-            this.openFileToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
+
+            this.openFileToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.openFileToolStripMenuItem1.Text = "Open File";
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.clickSaveAs);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Line",
-            "Spline",
-            "Point",});
-            this.comboBox1.Location = new System.Drawing.Point(63, 3);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            "Point",
+            "Spline"});
+            this.comboBox1.Location = new System.Drawing.Point(84, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedItem = null;
-            this.comboBox1.SelectedText = "Line";
             this.comboBox1.Size = new System.Drawing.Size(92, 21);
+
             this.comboBox1.Sorted = true;
             this.comboBox1.TabIndex = 4;
+            this.comboBox1.Text = "Line";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(309, 448);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Location = new System.Drawing.Point(412, 551);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 20);
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 5;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(388, 448);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Location = new System.Drawing.Point(517, 551);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 20);
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
             this.textBox2.TabIndex = 6;
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(468, 448);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Location = new System.Drawing.Point(624, 551);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 20);
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
             this.textBox3.TabIndex = 7;
             this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
@@ -171,15 +175,15 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(328, 25);
-            this.chart1.Margin = new System.Windows.Forms.Padding(2);
+            this.chart1.Location = new System.Drawing.Point(437, 31);
+            this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
             series1.Name = "y = √x³";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(373, 377);
+            this.chart1.Size = new System.Drawing.Size(497, 464);
             this.chart1.TabIndex = 8;
             this.chart1.Text = "chart1";
             title1.Name = "Title1";
@@ -192,12 +196,12 @@
             this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView5.Location = new System.Drawing.Point(16, 25);
-            this.dataGridView5.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView5.Location = new System.Drawing.Point(21, 31);
+            this.dataGridView5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(308, 377);
+            this.dataGridView5.Size = new System.Drawing.Size(411, 464);
             this.dataGridView5.TabIndex = 13;
             this.dataGridView5.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellContentClick);
             // 
@@ -238,9 +242,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 491);
+            this.ClientSize = new System.Drawing.Size(969, 604);
             this.Controls.Add(this.dataGridView5);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.textBox3);
@@ -252,7 +256,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Табулирование функции с построением графика";
             this.Load += new System.EventHandler(this.Form1_Load);
