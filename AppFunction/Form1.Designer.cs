@@ -174,9 +174,9 @@
             this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "y = √x³";
             this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(373, 377);
             this.chart1.TabIndex = 8;
