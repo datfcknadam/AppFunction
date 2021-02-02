@@ -124,6 +124,7 @@ namespace AppFunction
             return Math.Sqrt(Math.Pow(x, 3));
         }
 
+
         private void clickSaveAs(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -159,6 +160,10 @@ namespace AppFunction
                 }
             }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Column2.DataGridView.Rows.Clear();
+            this.chart1.Series[0].Points.Clear();
         }
     }
 }
